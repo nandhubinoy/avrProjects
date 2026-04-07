@@ -1,0 +1,17 @@
+﻿# IDE Specific Files
+.vs/
+*.atsuo
+
+# Build Artifacts
+Debug/
+Release/
+*.o
+*.d
+*.elf
+*.hex
+*.eep
+*.lss
+*.map
+*.srec
+makedep.mk
+Makefile
