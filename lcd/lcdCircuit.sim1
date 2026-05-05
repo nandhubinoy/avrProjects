@@ -1,0 +1,29 @@
+<circuit version="1.1.0-SR1" rev="2005" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="Hd44780" CircId="Hd44780-1" mainComp="false" Show_id="true" Show_Val="false" Pos="16,-196" rotation="0" hflip="1" vflip="1" label="Hd44780-1" idLabPos="70,-82" labelrot="0" valLabPos="-16,20" valLabRot="0" Rows="2" Cols="16" />
+
+<item itemtype="MCU" CircId="mega328-4" mainComp="false" Show_id="true" Show_Val="false" Pos="224,-168" rotation="0" hflip="1" vflip="1" label="mega328-4" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="../../../myCode/Entri/AVR/lcd/lcdInterface/Debug/lcdInterface.hex" Auto_Load="false" saveEepr="true" Logic_Symbol="false" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" Clk_Out="false" MainMcu="true" SerialMon="-1" />
+
+<item itemtype="Ground" CircId="Ground-5" mainComp="false" Show_id="false" Show_Val="false" Pos="40,-8" rotation="0" hflip="1" vflip="1" label="Ground-5" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Node" CircId="Node-6" mainComp="false" Pos="40,-188" />
+
+<item itemtype="Connector" uid="Connector-1" startpinid="Hd44780-1-dataPin7" endpinid="mega328-4-PORTD2" pointList="112,-188,112,-136,216,-136" />
+
+<item itemtype="Connector" uid="Connector-2" startpinid="Hd44780-1-dataPin6" endpinid="mega328-4-PORTD3" pointList="104,-188,104,-128,216,-128" />
+
+<item itemtype="Connector" uid="Connector-3" startpinid="Hd44780-1-dataPin5" endpinid="mega328-4-PORTD4" pointList="96,-188,96,-120,216,-120" />
+
+<item itemtype="Connector" uid="Connector-4" startpinid="Hd44780-1-dataPin4" endpinid="mega328-4-PORTD5" pointList="88,-188,88,-80,216,-80" />
+
+<item itemtype="Connector" uid="Connector-6" startpinid="Ground-5-Gnd" endpinid="Node-6-1" pointList="40,-24,40,-188" />
+
+<item itemtype="Connector" uid="Connector-7" startpinid="Hd44780-1-PinRW" endpinid="Node-6-0" pointList="40,-188,40,-188" />
+
+<item itemtype="Connector" uid="Connector-8" startpinid="Node-6-2" endpinid="Hd44780-1-PinRW" pointList="40,-188,40,-188" />
+
+<item itemtype="Connector" uid="Connector-9" startpinid="mega328-4-PORTB4" endpinid="Hd44780-1-PinRS" pointList="264,-80,300,-80,300,-28,32,-28,32,-188" />
+
+<item itemtype="Connector" uid="Connector-10" startpinid="Hd44780-1-PinEn" endpinid="mega328-4-PORTB3" pointList="48,-188,48,-36,284,-36,284,-72,264,-72" />
+
+</circuit>

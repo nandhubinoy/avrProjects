@@ -43,23 +43,23 @@ int main(void)
 		if(!(PINC & (1<<PINC1)))
 		{
 			_delay_ms(100);
-					if(!(PINC & (1<<PINC1)))
-					{
-			switchpresscount++;
-			switch (switchpresscount)
+			if(!(PINC & (1<<PINC1)))
 			{
-				case 1: OCR0A = 0;
-						break;
-				case 2: OCR0A = 64;
-						break;
-				case 3: OCR0A = 128;
-						break;
-			    case 4: OCR0A = 255;
-						break;
-				default: switchpresscount = 0;
+				switchpresscount++;
+				switch (switchpresscount)
+				{
+					case 1: OCR0A = 0;
+							break;
+					case 2: OCR0A = 64;
+							break;
+					case 3: OCR0A = 128;
+							break;
+					case 4: OCR0A = 255;
+							break;
+					default: switchpresscount = 0;
 						
+				}
 			}
-					}
 		}
 		
     }
